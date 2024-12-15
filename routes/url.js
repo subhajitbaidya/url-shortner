@@ -4,13 +4,17 @@ const {
   handleRedirectURL,
   handleGetAnalytics,
 } = require("../controllers/url");
+const { testServerSideRenderedOutput } = require("../controllers/test");
 
 const router = express.Router();
 
-router.post("/url", handleGenerateNewShortURL);
+router.post("/api/url", handleGenerateNewShortURL);
 
-router.get("/:shortId", handleRedirectURL);
+router.get("/r/:shortId", handleRedirectURL);
 
-router.get("/url/analytics/:shortId", handleGetAnalytics);
+router.get("/api/url/analytics/:shortId", handleGetAnalytics);
+
+router.get("/test", testServerSideRenderedOutput);
+
 
 module.exports = router;
