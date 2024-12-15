@@ -4,7 +4,7 @@ const {
   handleRedirectURL,
   handleGetAnalytics,
 } = require("../controllers/url");
-const { testServerSideRenderedOutput } = require("../controllers/test");
+const { testServerSideRenderedOutput } = require("../views/test");
 
 const router = express.Router();
 
