@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use("/", urlRoute);
-app.use("/ui", staticRoute);
+app.use("/", staticRoute);
 
 app.listen(PORT, () => {
   console.log(`Server started on PORT ${PORT}`);

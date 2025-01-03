@@ -39,8 +39,6 @@ async function handleGetAnalytics(req, res) {
   });
 }
 
-// To handle ejs UI coming from views
-
 module.exports = {
   handleGenerateNewShortURL,
   handleRedirectURL,
