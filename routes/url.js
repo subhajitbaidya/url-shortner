@@ -16,5 +16,4 @@ router.get("/api/url/analytics/:shortId", handleGetAnalytics);
 
 router.get("/test", testServerSideRenderedOutput);
 
-
 module.exports = router;
